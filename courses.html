@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | CampusHub</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" aria-label="CampusHub home">
+            <img src="images/campushub-logo.png" alt="CampusHub university logo">
+            <span>CampusHub</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" aria-current="page">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="courses-intro-title">
+            <h1 id="courses-intro-title">Our Courses</h1>
+            <p>
+                Discover a wide range of courses designed to help you develop
+                academic knowledge, practical skills, and professional experience.
+                Explore different departments and find a course that matches
+                your interests and future goals.
+            </p>
+        </section>
+
+        <section aria-labelledby="course-search-title">
+            <h2 id="course-search-title">Find Your Course</h2>
+
+            <form action="courses.html" method="get">
+                <div>
+                    <label for="course-search">Search Courses</label>
+                    <input
+                        type="search"
+                        id="course-search"
+                        name="search"
+                        placeholder="Enter a course name..."
+                    >
+                </div>
+
+                <div>
+                    <label for="department">Department</label>
+                    <select id="department" name="department">
+                        <option value="">All Departments</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="business">Business and Economics</option>
+                        <option value="languages">Languages</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="design">Arts and Design</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="level">Study Level</label>
+                    <select id="level" name="level">
+                        <option value="">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <button type="submit">Search Courses</button>
+            </form>
+
+            <p>
+                Note: These search controls demonstrate HTML form structure.
+                Actual filtering requires server-side functionality.
+            </p>
+        </section>
+
+        <nav aria-label="Course categories">
+            <h2>Browse Categories</h2>
+            <ul>
+                <li><a href="#computer-science-courses">Computer Science</a></li>
+                <li><a href="#business-courses">Business</a></li>
+                <li><a href="#design-courses">Arts and Design</a></li>
+                <li><a href="#language-courses">Languages</a></li>
+                <li><a href="#engineering-courses">Engineering</a></li>
+            </ul>
+        </nav>
+
+        <section aria-labelledby="all-courses-title">
+            <h2 id="all-courses-title">Explore All Courses</h2>
+
+            <section id="computer-science-courses" aria-labelledby="computer-science-title">
+                <h3 id="computer-science-title">Computer Science</h3>
+
+                <article>
+                    <img
+                        src="images/web-development.jpg"
+                        alt="Computer screen displaying HTML and website code"
+                    >
+                    <h4>Web Development</h4>
+                    <p>
+                        Learn to create accessible websites using HTML5,
+                        CSS fundamentals, and modern web development concepts.
+                    </p>
+                    <p><strong>Department:</strong> Computer Science</p>
+                    <p><strong>ECTS Credits:</strong> 6</p>
+                    <a href="course-web-development.html">View Details</a>
+                </article>
+
+                <article>
+                    <img
+                        src="images/database-systems.jpg"
+                        alt="Database diagram showing connected tables and records"
+                    >
+                    <h4>Database Systems</h4>
+                    <p>
+                        Explore relational databases, data modeling,
+                        SQL queries, and principles of data management.
+                    </p>
+                    <p><strong>Department:</strong> Computer Science</p>
+                    <p><strong>ECTS Credits:</strong> 6</p>
+                    <a href="course-database-systems.html">View Details</a>
+                </article>
+
+                <article>
+                    <img
+                        src="images/data-structures-algorithms.jpg"
+                        alt="Computer science illustration of data structures and algorithm diagrams"
+                    >
+                    <h4>Data Structures &amp; Algorithms</h4>
+                    <p>
+                        Understand common data structures, algorithm design,
+                        problem-solving strategies, and computational efficiency.
+                    </p>
+                    <p><strong>Department:</strong> Computer Science</p>
+                    <p><strong>ECTS Credits:</strong> 7</p>
+                    <a href="course-data-structures.html">View Details</a>
+                </article>
+
+                <article>
+                    <img
+                        src="images/software-engineering.jpg"
+                        alt="Software developers collaborating on a computer project"
+                    >
+                    <h4>Software Engineering</h4>
+                    <p>
+                        Study software development processes, requirements,
+                        testing, system design, and collaborative project work.
+                    </p>
+                    <p><strong>Department:</strong> Computer Science</p>
+                    <p><strong>ECTS Credits:</strong> 6</p>
+                    <a href="course-software-engineering.html">View Details</a>
+                </article>
+            </section>
+
+            <section id="business-courses" aria-labelledby="business-title">
+                <h3 id="business-title">Business and Economics</h3>
+
+                <article>
+                    <img
+                        src="images/digital-marketing.jpg"
+                        alt="Digital marketing analytics displayed on a computer screen"
+                    >
+                    <h4>Digital Marketing</h4>
+                    <p>
+                        Learn about social media campaigns, online advertising,
+                        search engine optimization, and digital analytics.
+                    </p>
+                    <p><strong>Department:</strong> Business and Economics</p>
+                    <p><strong>ECTS Credits:</strong> 5</p>
+                    <a href="course-digital-marketing.html">View Details</a>
+                </article>
+
+                <article>
+                    <img
+                        src="images/business-management.jpg"
+                        alt="Business professionals discussing plans at a meeting"
+                    >
+                    <h4>Business Management</h4>
+                    <p>
+                        Develop an understanding of leadership, organizational
+                        planning, business strategy, and decision-making.
+                    </p>
+                    <p><strong>Department:</strong> Business and Economics</p>
+                    <p><strong>ECTS Credits:</strong> 6</p>
+                    <a href="course-business-management.html">View Details</a>
+                </article>
+            </section>
+
+            <section id="design-courses" aria-labelledby="design-title">
+                <h3 id="design-title">Arts and Design</h3>
+
+                <article>
+                    <img
+                        src="images/graphic-design.jpg"
+                        alt="Graphic designer creating a colorful digital illustration"
+                    >
+                    <h4>Graphic Design</h4>
+                    <p>
+                        Explore visual communication, typography, color theory,
+                        and the fundamentals of digital design.
+                    </p>
+                    <p><strong>Department:</strong> Arts and Design</p>
+                    <p><strong>ECTS Credits:</strong> 5</p>
+                    <a href="course-graphic-design.html">View Details</a>
+                </article>
+            </section>
+
+            <section id="language-courses" aria-labelledby="languages-title">
+                <h3 id="languages-title">Languages</h3>
+
+                <article>
+                    <img
+                        src="images/english-language.jpg"
+                        alt="English language learning books and study materials"
+                    >
+                    <h4>English Language</h4>
+                    <p>
+                        Improve English reading, writing, speaking,
+                        listening, and academic communication skills.
+                    </p>
+                    <p><strong>Department:</strong> Languages</p>
+                    <p><strong>ECTS Credits:</strong> 4</p>
+                    <a href="course-english-language.html">View Details</a>
+                </article>
+            </section>
+
+            <section id="engineering-courses" aria-labelledby="engineering-title">
+                <h3 id="engineering-title">Engineering</h3>
+
+                <article>
+                    <img
+                        src="images/electrical-engineering.jpg"
+                        alt="Electrical engineering circuit board and electronic components"
+                    >
+                    <h4>Electrical Engineering</h4>
+                    <p>
+                        Study electrical circuits, electronic components,
+                        electrical systems, and essential engineering principles.
+                    </p>
+                    <p><strong>Department:</strong> Engineering</p>
+                    <p><strong>ECTS Credits:</strong> 7</p>
+                    <a href="course-electrical-engineering.html">View Details</a>
+                </article>
+            </section>
+        </section>
+
+        <section aria-labelledby="course-help-title">
+            <h2 id="course-help-title">Need Help Choosing a Course?</h2>
+            <p>
+                If you need guidance about course options or study requirements,
+                contact the university information team.
+            </p>
+            <p>
+                <a href="mailto:info@campushub.example">Contact CampusHub</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <section aria-labelledby="footer-about-title">
+            <h2 id="footer-about-title">About CampusHub</h2>
+            <p>
+                CampusHub connects students with courses, instructors,
+                university events, and academic information.
+            </p>
+        </section>
+
+        <nav aria-label="Footer navigation">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" aria-current="page">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+
+        <address>
+            CampusHub University Portal<br>
+            Student Services Office<br>
+            Email: <a href="mailto:info@campushub.example">info@campushub.example</a>
+        </address>
+
+        <p>
+            <small>&copy; 2026 CampusHub. Educational demonstration project.</small>
+        </p>
+    </footer>
+
+</body>
+</html>
